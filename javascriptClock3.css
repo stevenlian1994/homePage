@@ -1,0 +1,22 @@
+h1 {
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	background-color: steelblue;
+	color: white;
+}
+
+body {
+	margin:0 auto;
+	line-height: 2.5;
+}
+
+#timerHeader {
+	text-align: left;
+}
+
+div	{
+	text-align: center;
+
+}
+

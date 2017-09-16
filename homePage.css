@@ -1,6 +1,6 @@
 h1 {
-	margin: 0 auto;
-	padding-bottom: 40px;
+	margin: 0;
+	padding-bottom: 35px;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	background-color: steelblue;
@@ -13,8 +13,22 @@ h1 {
 }
 
 .blogPost {
-
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
-	
+}
+
+.lists	{
+	height: 350px;
+	overflow: scroll;
+	padding:0;
+}
+
+.container {
+	margin:0;
+
+	width: auto;
+}
+
+.done {
+	text-decoration: line-through;
 }

@@ -1,0 +1,66 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=e60e6ea435b823e97d18140afb420489');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #E8E8EA;
+    background-size: cover;
+}
+
+/* The side navigation menu */
+.nav {
+    height: 100%; /* 100% Full-height */
+    width: 160px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 30px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+#brand-img {
+    color: white;
+    margin-bottom: 80%;
+}
+
+/* The navigation menu links */
+.nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+
+.name-container {
+	color:white;
+	/*position: relative;*/
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.skills-container {
+
+	color:white;
+	/*position: relative;*/
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+
+}

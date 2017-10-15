@@ -64,3 +64,41 @@ body {
     font-size: 25px;
 
 }
+
+canvas {
+    background-color: white;
+	border: 1px solid black;
+
+}
+
+
+.container-projects {
+    text-align:left;
+}
+
+
+.url-container {
+    background-color: white;
+    width: 80%;
+    height: 40px;
+}
+
+.container-label {
+    color:white;
+}
+
+.container-form {
+    padding-top: 5%;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.caption {
+    color:white;
+}
+
+#main {
+    margin: 20px;
+}

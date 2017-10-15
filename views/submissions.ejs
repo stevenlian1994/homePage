@@ -1,0 +1,40 @@
+<% include partials/header.ejs %>
+
+<div class="col-lg-10">
+ 	<div id="main">
+ 		<div class="container-projects">
+ 		    <div class="name-container">Painting Submissions</div>
+ 		    
+ 		    <div class="container-2">
+                <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+                    <% doodles.forEach(function(doodle) { %>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail"> 
+                            <img src="<%=doodle.doodle%>">
+                        </div>
+                        <div class="caption">
+                            <h4> <%=doodle.name %></h4>
+                        </div>
+                    </div>
+            
+            
+                        <% }); %>
+                </div>
+                
+            </div>  
+ 		    
+ 		    
+ 	    </div>
+ 	    <div class="container-projects">
+ 	        <button> <a href="https://homepage-stevenlian1994.c9users.io/projects">Go back </a> </button>
+ 	    </div>
+    </div>
+</div>
+ 		    
+ 		    
+ 		    
+ 		    
+<script src="projects.js">
+	
+</script>
+<% include partials/footer.ejs %>

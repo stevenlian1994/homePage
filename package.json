@@ -4,6 +4,7 @@
   "description": "www.stevenlian.com",
   "main": "index.js",
   "dependencies": {
+    "blast-text": "^2.0.0",
     "body-parser": "^1.18.2",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
@@ -11,7 +12,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

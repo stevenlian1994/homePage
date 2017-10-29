@@ -1,14 +1,4 @@
-body {
-    font-family: 'Raleway', sans-serif;
-    background-image: url('https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=e60e6ea435b823e97d18140afb420489');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: #E8E8EA;
-    background-size: cover;
-}
-
-/* The side navigation menu */
+/* Navbar CSS */
 .nav {
     height: 100%; /* 100% Full-height */
     width: 160px; /* 0 width - change this with JavaScript */
@@ -38,8 +28,26 @@ body {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+/*.sidenav a:hover, .offcanvas a:focus{*/
+    /*color: #f1f1f1;*/
+/*    color: red;*/
+/*}*/
+
+.nav a:hover, .offcanvas a:focus{
+    color:#08fdd8;
+}
+
+/*Non-Navbar CSS*/
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=e60e6ea435b823e97d18140afb420489');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #E8E8EA;
+    background-size: cover;
 }
 
 
@@ -51,6 +59,12 @@ body {
     width: 100%;
     text-align: center;
     font-size: 50px;
+    text-align: left;
+}
+
+#main {
+    padding-right:50%;
+    padding-top:10%;
 }
 
 .skills-container {
@@ -60,7 +74,7 @@ body {
     left: 0;
     top: 50%;
     width: 100%;
-    text-align: center;
+
     font-size: 25px;
 
 }
@@ -101,4 +115,24 @@ canvas {
 
 #main {
     margin: 20px;
+}
+
+/*HOVER CSS*/
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
 }

@@ -1,22 +1,44 @@
-<% include partials/header.ejs %>
+<!DOCTYPE html><html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<title>main</title>
+</head>
+<body>
 
+	<div class="row">
+		<div class="col col-md-2">
+			<div class="nav">
+				<nav class="en">
+					<a id="brand-img" href="/"><b>&lt; S &gt;</b></a>
+					<a class="hvr-grow" href="/">Home</a>
+			 		<a class="hvr-grow" href="/projects">Projects</a>
+			 		<a class="hvr-grow" href="/about">About</a>
+			 		<a class="hvr-grow" href="/contact">Contact</a>
+				</nav>
+				<a class="hvr-grow" href="https://twitter.com/stevenlian1994" target="_blank"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+		 		<a class="hvr-grow" href="https://github.com/stevenlian1994" target="_blank"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
+			 	<a class="hvr-grow" href="#" target="_blank"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>		 		
+			</div>		
+ 		</div>  
+	
+		<div class="body-container col-md-10">
+			<div class="main">
 
-
-		<div class="col-lg-10">
- 				<div id="main">
-					<!-- name and introduction -->
-					<div class="name-container">
-						<div>Hi I'm Steven,</div>
-						<div>up n' coming web developer.</div>
-					</div>
-					<!-- coding languages -->
-					<div class="skills-container"> HTML/CSS/JAVASCRIPT</div>
-					<div class="skills-container"> MEAN Stack</div>
-					<div class="skills-container"> RUBY ON RAILS</div>
-					<div class="skills-container"><a class="btn btn-info" href="/contact">Contact Me</a></div>
+				<div class="introduction-container">
+				<div>Hi I'm Steven,</div>
+				<div>up n' coming web developer.</div>
 				</div>
-			</div>
- 		</div>
 
-<script src="projects.js"></script>
+				<div class="skills-container"> HTML/CSS/JAVASCRIPT</div>
+				<div class="skills-container"> MEAN Stack</div>
+				<div class="skills-container"> RUBY ON RAILS</div>
+				<div class="skills-container"><a class="btn btn-info" href="/contact">Contact Me</a></div>
+			</div>
+	 	</div>
+	</div>
+ 
+
 <% include partials/footer.ejs %>

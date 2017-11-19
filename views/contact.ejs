@@ -1,10 +1,72 @@
-<% include partials/header.ejs %>
+<!DOCTYPE html><html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="contact.css">
+<title>main</title>
+</head>
+<body>
 
-<div class="col-lg-10">
- 				<div id="main">
-					<div class="name-container">Contact Me</div>
-				</div>
-			</div>
- 		</div>
+    <!-- <div class="container"> -->
+    <div class="row">
+        <div class="navbar-container col col-md-2">
+            <div class="nav">
+                <nav class="en">
+                    <a id="brand-img" href="/"><b>&lt; S &gt;</b></a>
+                    <a class="hvr-grow" href="/">Home</a>
+                    <a class="hvr-grow" href="/projects">Projects!</a>
+                    <a class="hvr-grow" href="/about">About</a>
+                    <a class="hvr-grow" href="/contact">Contact</a>
+                </nav>
+                <a class="hvr-grow" href="https://twitter.com/stevenlian1994" target="_blank"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+                <a class="hvr-grow" href="https://github.com/stevenlian1994" target="_blank"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
+                <a class="hvr-grow" href="#" target="_blank"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>        
+            </div> 
+        </div>
 
-<% include partials/footer.ejs %>
+        <div class="form-container col col2 col-md-5">
+            <div class="text-area">
+                <h1 class="text-area-header">Contact Me</h1>
+                <input id="name-container" type="text" name="name" placeholder="Name">
+                <input id="email-container" type="text" name="email" placeholder="Email">
+                <input id="subject-container" type="text" placeholder="Subject">
+                <textarea id="message-container" class="form-control" rows="3" placeholder="Message"></textarea>
+                <button id="send-button">Send</button> -->
+            </div>
+        </div>
+
+        <div id="map-container" class="col col3 col-md-5">
+        <!-- MAP -->
+        hello
+        </div>
+
+
+
+
+        <script>
+          function initMap() {
+            var options = {
+                zoom:9,
+                center:{lat: 34.1336, lng: -117.9076}
+            }
+
+            //New map
+            var map = new google.maps.Map(document.getElementById('map-container'), options);
+            
+            //Add marker
+            var marker = new google.maps.Marker({
+              position:{lat:33.8366,lng:-117.9143},
+              
+              map:map
+            });
+
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBObcdmmcn8rIrrAxqVREGMP058QbP5uho&callback=initMap">
+        </script>
+    </div>
+
+</body>
+</html>

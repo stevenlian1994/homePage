@@ -1,39 +1,36 @@
-<% include partials/header.ejs %>
-
-<div class="col-lg-10">
- 	<div id="main">
- 		<div class="container-projects">
- 			<div class="name-container">Upcoming Projects</div>
- 			<div class="container-label"> Canvas</div>
-	        <div class="canvas-container">
-	            	<canvas id="canvas"></canvas>
-	        </div>
-	        
-	        <!--Print out your painting url when you click the button-->
-	        <div class="button-container">
-				<button id="save">Print out your painting url!</button>
-			</div> 
-			<div class="url-container" id="url"> ... </div>
- 		</div>
-		
-		<div class="container-form">
-			<div class="container-label"> Forms</div>
-			<form action="/submissions" method="POST">
-				<div class="form-group">
-					<input class="form-control" type="text" name="name" placeholder="name">
-				</div>
-				<div class="form-group">
-					<input class="form-control" type="text" name="doodle" placeholder="image url">
-				</div> 
-				<button>Submit!</button>	                
-			</form>
-		</div>
-	</div>
-</div>
-			
-
-
-
+<!DOCTYPE html><html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<title>main</title>
+</head>
+<body>
+	<!-- <div class="container"> -->
+	<div class="row">
+		<div class="col col-md-2">
+			<div class="nav">
+				<nav class="en">
+					<a id="brand-img" href="/"><b>&lt; S &gt;</b></a>
+					<a class="hvr-grow" href="/">Home</a>
+			 		<a class="hvr-grow" href="/projects">Projects</a>
+			 		<a class="hvr-grow" href="/about">About</a>
+			 		<a class="hvr-grow" href="/contact">Contact</a>
+				</nav>
+				<a class="hvr-grow" href="https://twitter.com/stevenlian1994" target="_blank"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+		 		<a class="hvr-grow" href="https://github.com/stevenlian1994" target="_blank"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
+			 	<a class="hvr-grow" href="#" target="_blank"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>		 		
+			</div>		
+ 		</div>  
 	
-</script>
+		<div class="body-container col-md-10">
+			<div id="main">
+				<div class="container-projects">
+				<div class="name-container">Projects</div>
+				<a style="color: white; text decoration: none;"  href="https://serene-hamlet-62119.herokuapp.com/"><h2 >Yelp Lakes</h2></a>
+				</div>
+			</div>
+		</div>
+
 <% include partials/footer.ejs %>

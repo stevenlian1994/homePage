@@ -51,7 +51,8 @@ html, body, .row {
         /*}*/
 
         .nav a:hover, .offcanvas a:focus{
-            color:#08fdd8;
+            /*color:#08fdd8;*/
+            color: beige;
         }
 
     .form-container{

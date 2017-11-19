@@ -14,7 +14,7 @@ html, body, .row {
     .body-container{
         background-color: grey;
         font-family: 'Raleway', sans-serif;
-        color: white;
+        color: beige;
         background-image: url('https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=e60e6ea435b823e97d18140afb420489');
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -45,7 +45,7 @@ html, body, .row {
         }
         
         #brand-img {
-            color: white;
+            color: beige;
             margin-bottom: 50%;
         }
         
@@ -60,7 +60,8 @@ html, body, .row {
         }
         
         .nav a:hover, .offcanvas a:focus{
-            color:#08fdd8;
+            /*color:#08fdd8;*/
+            color: beige;
         }
         
         /*HOVER CSS*/
@@ -86,12 +87,12 @@ html, body, .row {
         .main {
             padding-right:50%;
             padding-top:10%;
-                margin: 20px;
+            margin: 20px;
         }
         
             
-            .introduction-container {
-            	color:white;
+            .introduction-container, .projects-container {
+            	color:beige;
             	position: relative;
                 left: 0;
                 top: 50%;
@@ -102,7 +103,7 @@ html, body, .row {
             }
             
             .skills-container {
-            	color:white;
+            	color:beige;
             	position: relative;
                 left: 0;
                 top: 50%;
@@ -110,23 +111,34 @@ html, body, .row {
                 font-size: 25px;
             
             }
+            
+            
+            .project-thumbnail-container {
+                top: 50%;
+                margin: 25px;
+                text-align:center;
 
-
-
-
-.container-projects {
-    text-align:left;
-}
-
+            }
+            
+            .about-container {
+                background-color: #222;
+                color: beige;
+                padding:2% 2%;
+                 
+            }
+            
+            .about-header-container {
+               
+            }
 
 .url-container {
-    background-color: white;
+    background-color: beige;
     width: 80%;
     height: 40px;
 }
 
 .container-label {
-    color:white;
+    color:beige;
 }
 
 
@@ -140,7 +152,7 @@ html, body, .row {
 }
 
 .caption {
-    color:white;
+    color:beige;
 }
 
 

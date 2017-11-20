@@ -147,9 +147,36 @@ html, body, .row {
                 text-align: center;
                 margin-right: 10px;
             }
+            
+    #wrapper {
+        position: relative;
+        /*opacity: 0;*/
+        z-index: -1;
+    }
+            
     #map-container{
         background-color: grey ;
         height: 100%;
-        text-align: center;          
+        text-align: center;   
+        /*z-index: -1;*/
         
     }
+        /*.over_map{*/
+        /*    position: absolute; */
+        /*    top: 10px; */
+        /*    left: 10px; */
+        /*    z-index: 99;*/
+            /*position: absolute;*/
+        /*    background: black;*/
+            /*top: 50px;*/
+            /*right: 30%;*/
+            /*z-index: 999999;*/
+            /*width: 230px;*/
+            /*padding: 20px;*/
+            /*color: #fff;*/
+            /*font-family: "Open Sans","Helvetica",Arial,sans-serif;*/
+            /*font-size: 17px;*/
+            /*font-weight: 300;*/
+            /*opacity: 0;*/
+
+        /*}*/

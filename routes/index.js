@@ -59,7 +59,7 @@ router.post("/send", function(req, res){
     let mailOptions = {
         from: '"Nodemailer Contact" <main@stevenlian.com>', // sender address
         to: 'stevenlian1994@gmail.com', // list of receivers
-        subject: 'Message from stevenlian.com ' + new Date(), // Subject line
+        subject: 'Message from stevenlian.com ' + new Date(year, month, date, hours, minutes, seconds), // Subject line
         text: 'Hello world?', // plain text body
         html: output // html body
     };

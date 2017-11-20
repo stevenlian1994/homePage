@@ -28,14 +28,16 @@ router.post("/send", function(req, res){
         Subject: req.body.subject,
         Message: req.body.message
     };
+
     console.log(output);
 
     
     
     // create reusable transporter object using the default SMTP transport
     var transporter = nodemailer.createTransport({
+        // service: "bluehost",
         host: 'mail.stevenlian.com',
-        port: 110,
+        port: 26,
         secure: false, // true for 465, false for other ports
         auth: {
             user: "main@stevenlian.com", // generated ethereal user
@@ -44,7 +46,6 @@ router.post("/send", function(req, res){
         tls:{
             rejectUnauthorized: false
         }
-        
         }); 
         
      // setup email data with unicode symbols
@@ -53,7 +54,7 @@ router.post("/send", function(req, res){
         to: 'stevenlian1994@gmail.com', // list of receivers
         subject: 'Node Contact Request', // Subject line
         text: 'Hello world?', // plain text body
-        html: output // html body
+        html: "<a>stevenlian.com</a>" // html body
     };
 
 

@@ -35,18 +35,22 @@ router.post("/send", function(req, res){
     // create reusable transporter object using the default SMTP transport
     var transporter = nodemailer.createTransport({
         host: 'mail.stevenlian.com',
-        port: 587,
+        port: 110,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: "main@stevenlian.com", // generated ethereal user
+            user: "nodemailer@stevenlian.com", // generated ethereal user
             pass: "Aslasym4$$"  // generated ethereal password
+        },
+        tls:{
+            rejectUnauthorized: false
         }
+        
         }); 
         
      // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Nodemailer Contact" <main@stevenlian.com>', // sender address
-        to: 'stevenlian1994@gmail.com', // list of receivers
+        from: '"Nodemailer Contact" <nodemailer@stevenlian.com>', // sender address
+        to: 'main@stevenlian.com', // list of receivers
         subject: 'Node Contact Request', // Subject line
         text: 'Hello world?', // plain text body
         html: output // html body

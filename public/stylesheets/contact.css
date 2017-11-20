@@ -154,6 +154,10 @@ html, body, .row {
     /*    z-index: -1;*/
     /*}*/
             
+    .msg-container{
+        font-size: 16px;
+        color: beige;
+    }
     #map-container{
         background-color: grey ;
         height: 100%;

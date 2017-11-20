@@ -18,7 +18,7 @@ router.get("/about", function(req, res){
 });
 
 router.get("/contact", function(req, res){
-    res.render("contact");
+    res.render("contact", {msg: ""});
 });
 
 router.post("/send", function(req, res){

@@ -54,7 +54,7 @@ router.post("/send", function(req, res){
         to: 'stevenlian1994@gmail.com', // list of receivers
         subject: 'Node Contact Request', // Subject line
         text: 'Hello world?', // plain text body
-        html: "<a>stevenlian.com</a>" // html body
+        html: output // html body
     };
 
 

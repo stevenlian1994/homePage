@@ -29,7 +29,7 @@ router.post("/send", function(req, res){
     //     Message: req.body.message
     // };
     
-    const output = "
+    var output = `
     <p>You have a new contact request</p>
     <h3>Contact Details</h3>
     <ul>  
@@ -40,7 +40,8 @@ router.post("/send", function(req, res){
     </ul>
     <h3>Message</h3>
     <p>${req.body.message}</p>
-    "
+    `
+    
   ;
 
     console.log(output);

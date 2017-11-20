@@ -27,17 +27,20 @@
 
         <div class="form-container col col2 col-md-5">
             <div class="text-area">
+            	{{msg}}
                 <h1 class="text-area-header">Contact Me</h1>
-                <input id="name-container" type="text" name="name" placeholder="Name">
-                <input id="email-container" type="text" name="email" placeholder="Email">
-                <input id="subject-container" type="text" placeholder="Subject">
-                <textarea id="message-container" class="form-control" rows="3" placeholder="Message"></textarea>
-                <button id="send-button">Send</button> -->
+                <form method="POST" action="send">
+					<input id="name-container" type="text" name="name" placeholder="Name">
+					<input id="email-container" type="email" name="email" placeholder="Email">
+					<input id="subject-container" type="text" name="subject" placeholder="Subject">
+					<textarea id="message-container" class="form-control" name="message" rows="3" placeholder="Message"></textarea>
+					<button id="send-button">Send</button> -->
+                </form>
             </div>
         </div>
 
-        <div id="wrapper" class="col col3 col-md-5">
-        <div id="map-container"></div>
+        <div id="map-container" class="col col3 col-md-5">
+        <!--<div id="map-container"></div>-->
         <!--<div id="over_map">Hello</div>-->
  		</div>
 

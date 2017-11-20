@@ -1,7 +1,9 @@
 var express = require("express"),
     app = express(),
     bodyParser = require("body-parser"),
-    mongoose = require("mongoose");
+    mongoose = require("mongoose"),
+    nodemailer = require("nodemailer");
+    
     
 var indexRoutes = require("./routes/index");
     

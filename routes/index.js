@@ -59,10 +59,11 @@ router.post("/send", function(req, res){
     let mailOptions = {
         from: '"Nodemailer Contact" <main@stevenlian.com>', // sender address
         to: 'stevenlian1994@gmail.com', // list of receivers
-        subject: 'Node Contact Request', // Subject line
+        subject: 'Message from stevenlian.com ' + new Date(), // Subject line
         text: 'Hello world?', // plain text body
         html: output // html body
     };
+    console.log(mailOptions)
 
 
         transporter.sendMail(mailOptions, (error, info) => {

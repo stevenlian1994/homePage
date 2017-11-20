@@ -22,12 +22,26 @@ router.get("/contact", function(req, res){
 });
 
 router.post("/send", function(req, res){
-    var output = {
-        Name: req.body.name,
-        Email: req.body.email,
-        Subject: req.body.subject,
-        Message: req.body.message
-    };
+    // var output = {
+    //     Name: req.body.name,
+    //     Email: req.body.email,
+    //     Subject: req.body.subject,
+    //     Message: req.body.message
+    // };
+    
+    const output = "
+    <p>You have a new contact request</p>
+    <h3>Contact Details</h3>
+    <ul>  
+      <li>Name: ${req.body.name}</li>
+      <li>Company: ${req.body.company}</li>
+      <li>Email: ${req.body.email}</li>
+      <li>Phone: ${req.body.phone}</li>
+    </ul>
+    <h3>Message</h3>
+    <p>${req.body.message}</p>
+    "
+  ;
 
     console.log(output);
 

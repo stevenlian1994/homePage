@@ -121,15 +121,26 @@ html, body, .row {
             }
             
             .about-container {
+                /*top:200px;*/
                 background-color: #222;
                 color: beige;
                 padding:2% 2%;
+                
                  
             }
             
-            .about-header-container {
-               
-            }
+                .about-text-container {
+                    top:200px;
+                    position: absolute;
+                }
+            
+                    .about-header-container {
+                       
+                    }
+                    
+                    .about-body-container {
+                       
+                    }
 
 .url-container {
     background-color: beige;

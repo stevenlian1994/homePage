@@ -16,7 +16,7 @@ app.set("view engine", "ejs");
 
 
 //gets the css file working
-app.use(express.static(__dirname + '/public/stylesheets'));
+app.use(express.static('public'));
 
 
 app.use("/", indexRoutes);

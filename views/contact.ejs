@@ -3,7 +3,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="contact.css">
+  <link rel="stylesheet" type="text/css" href="/css/contact.css">
 <title>main</title>
 </head>
 <body>
@@ -45,22 +45,28 @@
             </div>
         </div>
 
-        <div id="map-container" class="col col3 col-md-5">
-        <!--<div id="map-container"></div>-->
-        <!--<div id="over_map">Hello</div>-->
- 		</div>
+        <div id="map-container" class="col col3 col-md-5"></div>
+ 		
+ 		<div id="over_map" class="col col3 col-md-5">Hello</div>
+ 		
 
 
 
 
-
+<!--<div id="map-container"></div>-->
 
         <script>
+        
+
+      
           function initMap() {
             var options = {
                 zoom:9,
                 center:{lat: 34.1336, lng: -117.9076}
             }
+            
+            var labels = 'S';
+		    var labelIndex = 0;
 
             //New map
             var map = new google.maps.Map(document.getElementById('map-container'), options);
@@ -68,9 +74,43 @@
             //Add marker
             var marker = new google.maps.Marker({
               position:{lat:33.8366,lng:-117.9143},
-              
+              label: labels[labelIndex++ % labels.length],
               map:map
             });
+            
+   //         var contentString = '<div id="content">'+
+			//   '<div id="siteNotice">'+
+			//   '</div>'+
+			//   '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+			//   '<div id="bodyContent">'+
+			//   '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+			//   'sandstone rock formation in the southern part of the '+
+			//   'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+			//   'south west of the nearest large town, Alice Springs; 450&#160;km '+
+			//   '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+			//   'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+			//   'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+			//   'Aboriginal people of the area. It has many springs, waterholes, '+
+			//   'rock caves and ancient paintings. Uluru is listed as a World '+
+			//   'Heritage Site.</p>'+
+			//   '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+			//   'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+			//   '(last visited June 22, 2009).</p>'+
+			//   '</div>'+
+			//   '</div>';
+			
+			// var infowindow = new google.maps.InfoWindow({
+			// content: contentString
+			// });
+			
+			// var marker = new google.maps.Marker({
+			// position:{lat:33.8366,lng:-117.9143},
+			// map: map,
+			// title: 'Uluru (Ayers Rock)'
+			// });
+			// marker.addListener('click', function() {
+			// infowindow.open(map, marker);
+			// });
 
           }
         </script>
